@@ -1,0 +1,30 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+div,
+article,
+ul {
+  outline: 1px dashed orangered;
+}
+
+h2,
+h3,
+b,
+p,
+a,
+li {
+  outline: 1px dashed #888888;
+}
+
+.main-header {
+  background-color: yellow;
+}
+
+.main-container {
+  background-color: pink;
+}
+
+.main-footer {
+  background-color: skyblue;
+}
