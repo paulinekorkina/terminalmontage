@@ -17,14 +17,14 @@
         </div>
         <div class="user-info">
           <p class="header-phone">+7 <span class="red-text">(909)</span> 364 91 07</p>
-          <div class="callback">Обратный звонок</div>
+          <a class="callback" href="#">Обратный звонок</a>
         </div>
       </div>
     </header>
     <main class="main-container">
       <div class="articles-wrapper">
         <article class="gas-boiler">
-          <h2 class="article-heading">Ремонт газовых котлов в Cызрани</h2>
+          <h2 class="article-heading"><span>Ремонт газовых котлов в Cызрани</span></h2>
           <div class="article-features">
             <p class="feature feature-1">Диагностика и профилактика оборудования</p>
             <p class="feature feature-2">Гарантийный и пост гарантийный ремонт</p>
@@ -44,7 +44,7 @@
           <div class="scroll">Вниз</div>
         </article>
         <article class="heating">
-          <h2 class="article-heading">Монтаж систем индивидуального  отопления</h2>
+          <h2 class="article-heading"><span>Монтаж систем индивидуального  отопления</span></h2>
           <div class="article-features">
             <p class="feature feature-1">Установка отопительных котлов</p>
             <p class="feature feature-2">Комплексный монтаж котельных</p>
@@ -64,7 +64,7 @@
           <div class="scroll">Вниз</div>
         </article>
         <article class="warm-floor">
-          <h2 class="article-heading">Монтаж систем теплого пола</h2>
+          <h2 class="article-heading"><span>Монтаж систем теплого пола</span></h2>
           <div class="brands">
             <img class="brand brand-1" src="img/wattsindustries.jpg" alt="watts industries">
             <img class="brand brand-2" src="img/royalthermo.jpg" alt="royal thermo">
@@ -80,11 +80,11 @@
       </div>
       <div class="order">
         <p class="order-heading">Онлайн заявка</p>
-        <form class="order-form" action="" method="">
+        <form class="order-form" action="php/send.php" method="post">
           <label for="order-name-id"></label>
-          <input class="order-name" id="order-name-id" type="text" name="order-name" placeholder="Ваше имя">
+          <input class="order-name" id="order-name-id" type="text" name="username" placeholder="Ваше имя" required>
           <label for="order-phone-id"></label>
-          <input class="order-phone" id="order-phone-id" type="text" name="order-phone" placeholder="Ваш телефон">
+          <input class="order-phone" id="order-phone-id" type="text" name="userphone" placeholder="Ваш телефон" required>
           <button class="btn order-btn" type="submit">Отправить</button>
         </form>
       </div>
@@ -104,18 +104,19 @@
         <span class="copyright-description">Сделано в студии B.Name</span>
       </div>
     </footer>
-    <div class="modal-window-open">
+    <div class="modal-window">
       <p class="modal-heading">Онлайн заявка</p>
       <button class="close-btn"></button>
-      <form class="modal-form" action="" method="">
+      <form class="modal-form" action="php/send.php" method="post">
         <label for="modal-name-id"></label>
-        <input class="modal-name" id="modal-name-id" type="text" name="modal-name" placeholder="Ваше имя">
+        <input class="modal-name" id="modal-name-id" type="text" name="username" placeholder="Ваше имя" required>
         <label for="modal-phone-id"></label>
-        <input class="modal-phone" id="modal-phone-id" type="text" name="modal-phone" placeholder="Ваш телефон">
+        <input class="modal-phone" id="modal-phone-id" type="text" name="userphone" placeholder="Ваш телефон" required>
         <button class="btn modal-btn" type="submit">Отправить</button>
       </form>
       <p class="modal-text">Наш специалист свяжется с вами в ближайшее время</p>
     </div>
-    <div class="modal-overlay-open"></div>
+    <div class="modal-overlay"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>
