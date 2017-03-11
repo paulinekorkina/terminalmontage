@@ -641,6 +641,12 @@ input:-ms-input-placeholder {
     width: 400px;
     margin: 0 0 0 -200px;
   }
+
+  .modal-heading {
+    padding-left: 10px;
+    text-align: left;
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -705,12 +711,6 @@ input:-ms-input-placeholder {
   .modal-window {
     width: 310px;
     margin: 0 0 0 -155px;
-  }
-
-  .modal-heading {
-    padding-left: 10px;
-    text-align: left;
-    font-size: 1.5em;
   }
 
   .modal-form .modal-name,
