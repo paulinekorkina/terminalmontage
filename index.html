@@ -104,16 +104,18 @@
         <span class="copyright-description">Сделано в студии B.Name</span>
       </div>
     </footer>
-    <div class="modal-window">
-      <p class="callback-heading">Онлайн заявка</p>
-      <form class="callback-form" action="" method="">
-        <label for="callback-name-id"></label>
-        <input id="callback-name-id" type="text" name="callback-name" placeholder="Ваше имя">
-        <label for="callback-phone-id"></label>
-        <input id="callback-phone-id" type="text" name="callback-phone" placeholder="Ваш телефон">
-        <button class="btn callback-btn" type="submit">Отправить</button>
+    <div class="modal-window-open">
+      <p class="modal-heading">Онлайн заявка</p>
+      <button class="close-btn"></button>
+      <form class="modal-form" action="" method="">
+        <label for="modal-name-id"></label>
+        <input class="modal-name" id="modal-name-id" type="text" name="modal-name" placeholder="Ваше имя">
+        <label for="modal-phone-id"></label>
+        <input class="modal-phone" id="modal-phone-id" type="text" name="modal-phone" placeholder="Ваш телефон">
+        <button class="btn modal-btn" type="submit">Отправить</button>
       </form>
-      <p>Наш специалист свяжется с вами в ближайшее время</p>
+      <p class="modal-text">Наш специалист свяжется с вами в ближайшее время</p>
     </div>
+    <div class="modal-overlay-open"></div>
   </body>
 </html>
