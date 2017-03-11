@@ -163,16 +163,7 @@ h2 span {
   background: url("../img/sprite.png") -5px -43px no-repeat;
 }
 
-@media screen and (max-width: 750px) {
-  .feature {
-    width: 80%;
-  }
 
-  .feature-1,
-  .feature-3 {
-   margin-right: 0;
-  }
-}
 
 .feature-1,
 .feature-3 {
@@ -308,12 +299,6 @@ input:-moz-placeholder {
 input:-ms-input-placeholder {
   color: #1a1a1a;
   opacity: 1;
-}
-
-@media screen and (max-width: 500px) {
-  .order-form input {
-    width: 300px;
-  }
 }
 
 .order-form .order-name {
@@ -525,4 +510,224 @@ input:-ms-input-placeholder {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.68);
+}
+
+@media screen and (max-width: 1210px) {
+  .header-wrapper {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .gas-boiler,
+  .heating,
+  .warm-floor {
+    padding: 10% 5% 0 5%;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .heating .article-heading {
+    font-size: 1.5em;
+  }
+
+  .feature {
+    width: 40%;
+  }
+
+  .brand {
+    margin-bottom: 5px;
+  }
+
+  .footer-top {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .company-info,
+  .user-info {
+    float: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .callback {
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+  }
+
+  .company-info {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /*.header-phone {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }*/
+
+  .order-form .order-name,
+  .order-form .order-phone {
+    display: block;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .order-btn {
+    bottom: -75px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .feature {
+    width: 80%;
+  }
+
+  .feature-1,
+  .feature-3 {
+   margin-right: 0;
+  }
+
+  .footer-contacts,
+  .schedule {
+    float: none;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .company-info {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .main-logo {
+    float: left;
+  }
+
+  .company-title {
+    display: inline;
+    font-size: 1.15em;
+  }
+
+  .header-phone {
+    font-size: 1.75em;
+  }
+
+  .gas-boiler {
+    padding-top: 30%;
+  }
+
+  .brand {
+    margin-right: 0;
+  }
+
+  .modal-window {
+    width: 400px;
+    margin: 0 0 0 -200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-phone {
+    font-size: 1.6em;
+  }
+
+  .callback {
+    left: 0;
+    right: 0;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  .order-heading {
+    width: 90%;
+    padding: 13px 0;
+    font-size: 1.5em;
+  }
+
+  .order-form .order-name,
+  .order-form .order-phone {
+    width: 90%;
+    font-size: 1.5em;
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+
+  .order-form .order-name {
+    padding-left: 100px;
+  }
+
+  .order-form .order-phone {
+    padding-left: 80px;
+  }
+
+  .order-btn {
+    right: 0;
+    bottom: -75px;
+    left: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 11px 0;;
+  }
+
+  .schedule {
+    font-size: 0.9em;
+  }
+
+  .footer-phone {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+
+  .modal-window {
+    width: 310px;
+    margin: 0 0 0 -155px;
+  }
+
+  .modal-heading {
+    padding-left: 10px;
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  .modal-form .modal-name,
+  .modal-form .modal-phone {
+    width: 90%;
+    font-size: 1.25em;
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+
+  .modal-form .modal-name {
+    padding-left: 100px;
+    background-position: 15px -211px;
+  }
+
+  .modal-form .modal-phone {
+    padding-left: 70px;
+    background-position: 25px -263px;
+  }
 }
