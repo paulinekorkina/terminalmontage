@@ -196,11 +196,19 @@ h2 span {
 }
 
 .scroll {
+  display: block;
   width: 44px;
   height: 76px;
   margin: 0 auto;
   font-size: 0;
   background: url("../img/sprite.png") -5px -130px no-repeat;
+}
+
+.scroll-up,
+.scroll-down {
+  display: block;
+  width: 44px;
+  height: 38px;
 }
 
 .heating {

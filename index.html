@@ -25,7 +25,7 @@
     <main class="main-container">
       <div class="articles-wrapper">
         <article class="gas-boiler">
-          <h2 class="article-heading"><span>Ремонт газовых котлов в Cызрани</span></h2>
+          <h2 class="article-heading" id="article1"><span>Ремонт газовых котлов в Cызрани</span></h2>
           <div class="article-features">
             <p class="feature feature-1">Диагностика и профилактика оборудования</p>
             <p class="feature feature-2">Гарантийный и пост гарантийный ремонт</p>
@@ -42,10 +42,13 @@
           <p class="article-description">
             Каждому владельцу необходимо заботиться о безопасности дома, постоянно контролируя работу системы отопления. Даже котел от проверенного производителя должен проходить ежегодное техническое обслуживание, и эту задачу можно поручить только профессионалам. Первым признаком неполадки становится непривычный шум, техника нередко начинает самопроизвольно выключаться и включаться. Если возникли признаки неполадки, необходимо как можно скорее принять меры по их устранению. Это позволяет избежать более серьезных поломок и сократить расходы на ремонт котлов.
           </p>
-          <div class="scroll">Вниз</div>
+          <div class="scroll">
+            <a href="#" class="smooth scroll-up"></a>
+            <a href="#article2" class="smooth scroll-down"></a>
+          </div>
         </article>
         <article class="heating">
-          <h2 class="article-heading"><span>Монтаж систем индивидуального  отопления</span></h2>
+          <h2 class="article-heading" id="article2"><span>Монтаж систем индивидуального  отопления</span></h2>
           <div class="article-features">
             <p class="feature feature-1">Установка отопительных котлов</p>
             <p class="feature feature-2">Комплексный монтаж котельных</p>
@@ -62,10 +65,13 @@
           <p class="article-description">
             Профессиональный монтаж отопления позволит надежно защитить любое здание от холода, при этом сведя к минимуму расходы на потребление тепла. Если доверить эту работу неспециалистам, отопительное оборудование может выйти из строя во время суровых холодов. Проблем в работе и внезапных аварий можно избежать, если монтаж отопления дома будет выполняться настоящими профессионалами.
           </p>
-          <div class="scroll">Вниз</div>
+          <div class="scroll">
+            <a href="#article1" class="smooth scroll-up"></a>
+            <a href="#article3" class="smooth scroll-down"></a>
+          </div>
         </article>
         <article class="warm-floor">
-          <h2 class="article-heading"><span>Монтаж систем теплого пола</span></h2>
+          <h2 class="article-heading" id="article3"><span>Монтаж систем теплого пола</span></h2>
           <div class="brands">
             <img class="brand brand-1" src="img/wattsindustries.jpg" alt="watts industries">
             <img class="brand brand-2" src="img/royalthermo.jpg" alt="royal thermo">
@@ -76,10 +82,13 @@
           <p class="article-description">
             Обустройство теплых полов. Они могут использоваться как основное или дополнительное отопительное оборудование. Монтаж теплых полов системы отопления — отличное решение, гарантирующее комфорт. Теплые полы обеспечат равномерный прогрев воздуха по всей площади комнаты, при этом они дают возможность сэкономить. Элементы системы водяного теплого пола совместимы с любыми видами полов (неважно, какое половое покрытие планируется в доме; монтаж системы водяного пола возможен и под ковролин, и под плитку, и под ламинат, и под линолеум)
           </p>
-          <div class="scroll">Вниз</div>
+          <div class="scroll">
+            <a href="#article2" class="smooth scroll-up"></a>
+            <a href="#orderform" class="smooth scroll-down"></a>
+          </div>
         </article>
       </div>
-      <div class="order">
+      <div class="order" id="orderform">
         <p class="order-heading">Онлайн заявка</p>
         <form class="order-form" action="php/send.php" method="post">
           <label for="order-name-id"></label>
@@ -118,6 +127,8 @@
       <p class="modal-text">Наш специалист свяжется с вами в ближайшее время</p>
     </div>
     <div class="modal-overlay"></div>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
