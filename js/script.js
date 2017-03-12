@@ -38,12 +38,36 @@ $(function() {
       $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top
         }, 1500,'easeInOutExpo');
-        /*
-        если вы не хотите использовать эффект:
-        $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top
-          }, 1000);
-          */
         event.preventDefault();
   });
 });
+
+function call() {
+  var msg   = $('#formx').serialize();
+    $.ajax({
+      type: 'POST',
+      url: 'php/send.php',
+      data: msg,
+      success: function(data) {
+        $('#results').html(data);
+      },
+      error:  function(xhr, str){
+      alert('Возникла ошибка: ' + xhr.responseCode);
+      }
+  });
+}
+
+function call1() {
+  var msg1   = $('#formx1').serialize();
+      $.ajax({
+        type: 'POST',
+        url: 'php/send1.php',
+        data: msg1,
+        success: function(data) {
+          $('#results1').html(data);
+        },
+        error:  function(xhr, str){
+        alert('Возникла ошибка: ' + xhr.responseCode);
+        }
+      });
+}

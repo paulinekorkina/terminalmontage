@@ -1,1 +1,7 @@
-# terminalmontage
+Отключение эффекта скролла
+
+Для отключения эффекта скролла необходимо удалить или закомментировать в файле index.html строку 131:
+
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+или в файле js/script.js закомментировать строки с 34 по 43.

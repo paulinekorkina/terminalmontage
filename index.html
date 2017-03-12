@@ -43,8 +43,8 @@
             Каждому владельцу необходимо заботиться о безопасности дома, постоянно контролируя работу системы отопления. Даже котел от проверенного производителя должен проходить ежегодное техническое обслуживание, и эту задачу можно поручить только профессионалам. Первым признаком неполадки становится непривычный шум, техника нередко начинает самопроизвольно выключаться и включаться. Если возникли признаки неполадки, необходимо как можно скорее принять меры по их устранению. Это позволяет избежать более серьезных поломок и сократить расходы на ремонт котлов.
           </p>
           <div class="scroll">
-            <a href="#" class="smooth scroll-up"></a>
-            <a href="#article2" class="smooth scroll-down"></a>
+            <a href="#" class="smooth scroll-up">Вверх</a>
+            <a href="#article2" class="smooth scroll-down">Вниз</a>
           </div>
         </article>
         <article class="heating">
@@ -66,8 +66,8 @@
             Профессиональный монтаж отопления позволит надежно защитить любое здание от холода, при этом сведя к минимуму расходы на потребление тепла. Если доверить эту работу неспециалистам, отопительное оборудование может выйти из строя во время суровых холодов. Проблем в работе и внезапных аварий можно избежать, если монтаж отопления дома будет выполняться настоящими профессионалами.
           </p>
           <div class="scroll">
-            <a href="#article1" class="smooth scroll-up"></a>
-            <a href="#article3" class="smooth scroll-down"></a>
+            <a href="#article1" class="smooth scroll-up">Вверх</a>
+            <a href="#article3" class="smooth scroll-down">Вниз</a>
           </div>
         </article>
         <article class="warm-floor">
@@ -83,14 +83,14 @@
             Обустройство теплых полов. Они могут использоваться как основное или дополнительное отопительное оборудование. Монтаж теплых полов системы отопления — отличное решение, гарантирующее комфорт. Теплые полы обеспечат равномерный прогрев воздуха по всей площади комнаты, при этом они дают возможность сэкономить. Элементы системы водяного теплого пола совместимы с любыми видами полов (неважно, какое половое покрытие планируется в доме; монтаж системы водяного пола возможен и под ковролин, и под плитку, и под ламинат, и под линолеум)
           </p>
           <div class="scroll">
-            <a href="#article2" class="smooth scroll-up"></a>
-            <a href="#orderform" class="smooth scroll-down"></a>
+            <a href="#article2" class="smooth scroll-up">Вверх</a>
+            <a href="#orderform" class="smooth scroll-down">Вниз</a>
           </div>
         </article>
       </div>
       <div class="order" id="orderform">
         <p class="order-heading">Онлайн заявка</p>
-        <form class="order-form" action="php/send.php" method="post">
+        <form class="order-form" method="POST" id="formx" action="javascript:void(null);" onsubmit="call()">
           <label for="order-name-id"></label>
           <input class="order-name" id="order-name-id" type="text" name="username" placeholder="Ваше имя" required>
           <label for="order-phone-id"></label>
@@ -117,7 +117,7 @@
     <div class="modal-window">
       <p class="modal-heading">Онлайн заявка</p>
       <button class="close-btn"></button>
-      <form class="modal-form" action="php/send.php" method="post">
+      <form class="modal-form" method="POST" id="formx1" action="javascript:void(null);" onsubmit="call1()">
         <label for="modal-name-id"></label>
         <input class="modal-name" id="modal-name-id" type="text" name="username" placeholder="Ваше имя" required>
         <label for="modal-phone-id"></label>
