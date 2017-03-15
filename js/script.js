@@ -49,7 +49,33 @@ function call() {
       url: 'php/send.php',
       data: msg,
       success: function(data) {
-        $('#results').html(data);
+        //$('#results').html('Ваша заявка успешно отправлена!');
+        var success = document.querySelector(".success-sent");
+        var soverlay = document.querySelector(".success-overlay");
+        var sclose = success.querySelector(".success-btn");
+
+        success.classList.add("success-sent-open");
+        soverlay.classList.add("success-overlay-open");
+
+        sclose.addEventListener("click", function(event) {
+          event.preventDefault();
+          success.classList.remove("success-sent-open");
+          soverlay.classList.remove("success-overlay-open");
+        });
+
+        soverlay.addEventListener("click", function(event) {
+          success.classList.remove("success-sent-open");
+          soverlay.classList.remove("success-overlay-open");
+        });
+
+        window.addEventListener("keydown", function(event) {
+          if (event.keyCode === 27) {
+            if (success.classList.contains("success-sent-open")) {
+              success.classList.remove("success-sent-open");
+              soverlay.classList.remove("success-overlay-open");
+            }
+          }
+        });
       },
       error:  function(xhr, str){
       alert('Возникла ошибка: ' + xhr.responseCode);
@@ -64,7 +90,7 @@ function call1() {
         url: 'php/send1.php',
         data: msg1,
         success: function(data) {
-          $('#results1').html(data);
+          $('#results1').html('Ваша заявка успешно отправлена. Оставайтесь на связи!');
         },
         error:  function(xhr, str){
         alert('Возникла ошибка: ' + xhr.responseCode);
